@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Teemo.3D">
+    <meta name="keywords" content="Teemo.3D">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teemo.3D(Carito de compra)</title>
+
+        <!--Icono en la pestaña-->
+        <link href="img/Mini-logo.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Precargador de página -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Comienzo de menu de celu -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+            </ul>
+            <div class="header__cart__price">Plata: <span>$0</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>Argentina</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Argentina</a></li>
+                    <li><a href="#">Ingles</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Inicia Sesion</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./shop-grid.html">Tienda</a></li>
+            <!--    <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>-->
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="https://www.facebook.com/Teemo.3D"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/teemo.3d/?hl=es-la"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> emprendimientoteemo.3d@gmail.com</li>
+                <li>Creador de la pagina: @Maxi_B</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Final del menu de celular -->
+
+    <!-- Inicio del menu de pc -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> emprendimientoteemo.3d@gmail.com</li>
+                                <li>Creador de la pagina: @Maxi_B</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="https://www.facebook.com/Teemo.3D"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/teemo.3d/?hl=es-la"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>Argentina</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Argentina</a></li>
+                                    <li><a href="#">Ingles</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Inicia Sesion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li class="active"><a href="./shop-grid.html">Tienda</a></li>
+                        <!--    <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>-->
+                            <li><a href="./contact.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Plata: <span>$0</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Final de menu de pc -->
+
+    <!-- menu secundario -->
+    <section class="hero hero-normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Categoria</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Tienda</a></li>
+                            <li><a href="#">Mas vendido</a></li>
+                            <li><a href="#">Packs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    Categoria
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="Escribe lo que necesitas(no funciona por ahora)">
+                                <button type="submit" class="site-btn">Buscar</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+54 342 599 2786</h5>
+                                <span>Soporte 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final de menu secundario -->
+
+    <!-- Banner -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Carrito de tienda</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Inicio</a>
+                            <span>Carrito de tienda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner -->
+
+    <!-- Menu de compra -->
+    <section class="shoping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="shoping__product">Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-1.jpg" alt="">
+                                        <h5>Mate de Stitch</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-2.jpg" alt="">
+                                        <h5>Mate de Stitch</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shoping__cart__item">
+                                        <img src="img/cart/cart-3.jpg" alt="">
+                                        <h5>Mate de Stitch</h5>
+                                    </td>
+                                    <td class="shoping__cart__price">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__quantity">
+                                        <div class="quantity">
+                                            <div class="pro-qty">
+                                                <input type="text" value="1">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="shoping__cart__total">
+                                        $0
+                                    </td>
+                                    <td class="shoping__cart__item__close">
+                                        <span class="icon_close"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__btns">
+                        <a href="#" class="primary-btn cart-btn">SEGUIR COMPRANDO</a>
+                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
+                            Actualizar la compra</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Códigos de descuento</h5>
+                            <form action="#">
+                                <input type="text" placeholder="Introduce tu código de cupón">
+                                <button type="submit" class="site-btn">APLICAR CUPÓN</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Total del carrito</h5>
+                        <ul>
+                            <li>Subtotal <span>$0</span></li>
+                            <li>Total <span>$0</span></li>
+                        </ul>
+                        <a href="#" class="primary-btn">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu de compra final -->
+
+    <!-- inicio de Menu final -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                <!--        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>-->
+                        <ul>
+<!--                            <li>Address: 60-49 Road 11378 New York</li>-->
+                            <li>Movil: +54 342 599 2786</li>
+                            <li>Email: emprendimientoteemo.3d@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Paginas:</h6>
+                        <ul>
+                            <li><a href="#">Tienda</a></li>
+                            <li><a href="#">Tienda de descuento</a></li>
+                            <li><a href="#">Contactos</a></li>
+                        <!--    <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>-->
+                        </ul>
+                        <ul>
+                        <!--    <li><a href="#">Contactos</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                <!--        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>-->
+                        <div class="footer__widget__social">
+                            <a href="https://www.facebook.com/Teemo.3D/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/?hl=es-la"><i class="fa fa-instagram"></i></a>
+            <!--                <a href="#"><i class="fa fa-twitter"></i></a>
+                             <a href="#"><i class="fa fa-pinterest"></i></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p>
+  Copyright &copy;Todos los derechos reservados | Creador de la pagina: <a href="https://www.instagram.com/maxi_b__/?hl=es-la" target="_blank">@Maxi_B</a></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
